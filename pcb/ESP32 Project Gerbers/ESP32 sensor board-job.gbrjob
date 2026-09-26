@@ -3,9 +3,9 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "8.0.7"
+      "Version": "10.0.5"
     },
-    "CreationDate": "2024-12-27T12:04:35+11:00"
+    "CreationDate": "2026-09-12T10:36:52-05:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -14,8 +14,8 @@
       "Revision": "rev?"
     },
     "Size": {
-      "X": 89.6,
-      "Y": 52.85
+      "X": 89.9937,
+      "Y": 52.9429
     },
     "LayerNumber": 4,
     "BoardThickness": 1.6,
@@ -24,8 +24,8 @@
   "DesignRules": [
     {
       "Layers": "Outer",
-      "PadToPad": 0.005,
-      "PadToTrack": 0.005,
+      "PadToPad": 0.15,
+      "PadToTrack": 0.15,
       "TrackToTrack": 0.15,
       "MinLineWidth": 0.2,
       "TrackToRegion": 0.15,
@@ -48,12 +48,12 @@
       "FilePolarity": "Positive"
     },
     {
-      "Path": "ESP32 sensor board-In1_Cu.g2",
+      "Path": "ESP32 sensor board-In1_Cu.g1",
       "FileFunction": "Copper,L2,Inr",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "ESP32 sensor board-In2_Cu.g3",
+      "Path": "ESP32 sensor board-In2_Cu.g2",
       "FileFunction": "Copper,L3,Inr",
       "FilePolarity": "Positive"
     },
