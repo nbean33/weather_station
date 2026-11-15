@@ -1,0 +1,3 @@
+https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/jtag-debugging/configure-ft2232h-jtag.html
+
+https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html#development-board-overviews
