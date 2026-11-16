@@ -1,0 +1,67 @@
+Review result
+The firmware is not ready to build and run reliably on this board. The largest problems are target/board mismatches, invalid task affinity for an ESP32-C3, and unsafe unauthenticated HTTP/OTA handling. I made no code changes. This was a read-only source and schematic review; I did not build or test on hardware.
+
+Blocker and high-severity findings
+The checked-out tree is missing required build inputs.
+The root CMakeLists.txt:4 expects an esp-aws-iot component, and main/aws_iot.c:48-51 includes headers such as aws_iot_config.h; neither the component nor that header is present in the repository. main/CMakeLists.txt:5-7 also embeds three certificate files, but main/certs/ is absent. The README tells the user to supply certificates, but the AWS component dependency is not present in this checkout. There is also no checked-in sdkconfig.defaults or sdkconfig pinning the target and build configuration. A clean build therefore cannot be reproduced from this tree as-is.
+
+The firmware’s temperature/humidity sensor does not match the PCB.
+ selects GPIO25, which is not a valid ESP32-C3 GPIO; the C3 exposes GPIO0–GPIO21. More importantly, the schematic has a BME280 (U7) on I²C—SDA on GPIO4 and SCL on GPIO3—not a DHT22. The code starts the DHT22 task in main/main.c:40-41, and the web and AWS paths publish its readings. As a result, the board’s fitted environmental sensor is not read, while the DHT driver cannot use its configured pin. GPIO errors are not checked in main/DHT22.c:154-170.
+
+Three tasks are assigned to Core 1 on a single-core target.
+main/tasks_common.h:29-42 assigns the DHT22, SNTP, and AWS tasks to core 1; their creation calls are at main/DHT22.c:258-260, main/sntp_time_sync.c:104-106, and main/aws_iot.c:214-219. The ESP32-C3 has one core. In the project’s stated ESP-IDF 4.4-compatible range, an out-of-range affinity can make task creation fail; the return values are ignored. Depending on the ESP-IDF version, this can leave sensor, time-sync, and cloud functions unavailable or cause an assertion. The README’s “Dual-Core Utilization” description is also wrong for this board.
+
+Firmware update and configuration endpoints have no authentication.
+The HTTP server registers /OTAupdate and Wi-Fi configuration/disconnect endpoints without an authorization check (main/http_server.c:609-670). The device runs AP+STA mode (main/wifi_app.c:182-183) with the fixed AP password "password" (main/wifi_app.h:17-18). Any client able to reach the server can attempt firmware updates or change network settings. Secure Boot or signed-image enforcement cannot be confirmed from the checked-in configuration.
+
+Wi-Fi credential parsing can crash or overwrite memory.
+In main/http_server.c:374-400, a missing header leaves its pointer null, but the code still passes it to memcpy. For maximum-length SSID/password values, the code copies the header length plus the terminator into fixed-size 32- and 64-byte fields, writing one byte beyond each field. The browser permits those maximum lengths (main/webpage/index.html:57-59). The handler also does not check allocations or header-read failures.
+
+OTA request parsing is unsafe and does not match the browser upload format.
+The browser sends a FormData multipart request (main/webpage/app.js:41-57), but main/http_server.c:247-294 treats the first receive buffer as a complete, NUL-terminated header and calls strstr on it without checking for a missing delimiter. Receives may be partial, and the buffer is not terminated. The handler strips a presumed first-part header but does not remove the multipart closing boundary; it also compares a count that excludes that header against the full request length. It ignores esp_ota_write errors, does not check whether the next partition is null, and retries socket timeouts indefinitely. This can make updates fail or hang the HTTP service, and malformed uploads can trigger out-of-bounds reads.
+
+Station credentials are sent and logged in plaintext.
+The browser sends the SSID and password in custom HTTP headers (main/webpage/app.js:208-215); the HTTP server logs them (main/http_server.c:380-391); and NVS save/load logs them again (main/app_nvs.c:63,113). HTTP does not protect credentials in transit, and serial-log access exposes stored passwords. Remove password logging and protect the configuration channel.
+
+Medium-severity findings
+The reset-button GPIO is wired to the microphone, not the button.
+Firmware configures GPIO0 as the reset-button input (main/wifi_reset_button.h:12-13, main/wifi_reset_button.c:58-71). The schematic connects GPIO0 to the microphone amplifier output (MIC_OUT); the physical BOOT switch is on GPIO9. Audio activity can therefore trigger the interrupt, while pressing the actual BOOT switch will not. Separately, main/wifi_app.c:307-315 only clears credentials when the station is already connected, so a press during connection failures or while offline does nothing.
+
+The RGB status LED code cannot operate the board’s LEDs and risks using a UART pin.
+The schematic shows D4 as a power indicator and D5/D6 as CP2102 UART-activity indicators—there is no ESP32-controlled RGB LED. main/rgb_led.h:9-12 selects GPIO21/22/23; GPIO22 and GPIO23 do not exist on the C3, and GPIO21 is the module’s UART0 TX connection to the CP2102. The driver also selects LEDC high-speed mode, while the C3 supports low-speed mode only (main/rgb_led.c:26-66). Errors are ignored and initialization is marked successful anyway at line 69. Status calls from main/wifi_app.c:401-403 therefore do not provide valid status indication.
+
+The OTA partition table is not selected by the project configuration.
+partitions.csv defines two OTA slots, but the project does not select that custom CSV in CMake and has no checked-in configuration enabling it. ESP-IDF’s default partition table is single-app/no-OTA. If the custom table is not selected in the local sdkconfig, esp_ota_get_next_update_partition() may return null; main/http_server.c:242-243 does not check for that case.
+
+Reconnect retry state is not reset after a successful connection.
+main/wifi_app.c:93-101 increments g_retry_number, but the successful-IP path at lines 110-114 does not reset it. Retries used during initial connection can reduce or eliminate retries for a later outage. In addition, after saved credentials exhaust retries, lines 323-328 erase them, so a temporary AP outage can make the device forget valid credentials.
+
+A normal Wi-Fi link loss can lead to fatal error handling.
+After unexpected disconnects, the Wi-Fi task may leave the HTTP status as “connected” (main/wifi_app.c:341-350). The status handler then calls ESP_ERROR_CHECK on AP/IP queries (main/http_server.c:443-450), which can panic if the link is down. The AWS path has a similar risk: it calls wifi_app_get_rssi() at , and that getter uses ESP_ERROR_CHECK at main/wifi_app.c:388-394.
+
+AWS errors can terminate the application instead of recovering.
+Initialization, reconnect setup, and subscription failures call abort() (main/aws_iot.c:132-174); the publish loop also aborts when rc falls outside a small set of expected values (186-211). A transient broker or network error can therefore take down the application rather than being handled as a recoverable service failure. The client ID and topic are also fixed test values (, main/aws_iot.c:166-170), which will collide if multiple devices use the same AWS identity.
+
+SNTP tasks can be duplicated, and SNTP is reinitialized while time is still unset.
+main/main.c:16-20 starts SNTP every time the Wi-Fi-connected callback runs, with no “already started” guard. The SNTP task itself runs forever, and main/sntp_time_sync.c:57-63,70-75 calls sntp_init() and reports initialization again every 10 seconds until the clock is set. Reconnects can create duplicate tasks, while the web status indicates initialization rather than successful synchronization.
+
+The cached Wi-Fi config object is reused for both station and AP configuration.
+wifi_app.c:27-28 holds one shared wifi_config_t used for station credentials; http_server.c:511-515 passes that same object to esp_wifi_get_config() for the AP. A page request can overwrite the cached station credentials with AP configuration, affecting later operations or credential persistence.
+
+DHT readings can become invalid or inconsistent even if a DHT is attached.
+main/DHT22.c:208-231 updates the global humidity and temperature before validating the checksum, so a corrupt frame replaces the last good values. The separate getters (49-50) have no synchronization, allowing consumers to observe fields from different samples. Pulse lengths are estimated by delay-loop counts rather than wall-clock timing (83-96,180-204), making the bit-banged read sensitive to scheduling and interrupt latency.
+
+Disconnect events leak heap memory.
+main/wifi_app.c:89-91 allocates a copy of the disconnect event data but never frees it. Repeated disconnect/retry cycles consume heap. The allocation is also dereferenced without checking for failure.
+
+Lower-priority issues
+ returns from several error paths without closing an opened NVS handle, and it does not check its buffer allocation before use.
+Several queue, semaphore, task, GPIO, and LEDC setup results are unchecked. That makes initialization failures silent or can lead to null-handle use.
+The frontend inserts the selected filename into innerHTML (main/webpage/app.js:33,49) instead of rendering it as text.
+The README’s GPIO table and generic “any ESP32 DevKit” hardware description do not describe this custom ESP32-C3 board.
+Recommended order
+Make the firmware match the board: implement BME280 over GPIO4/GPIO3 I²C, map the reset action to the actual GPIO9 button, and remove or redesign the RGB LED feature.
+Fix C3 task creation and check every task-creation result.
+Harden HTTP credential handling and OTA authentication/parsing; stop logging secrets.
+Check in a reproducible target/configuration setup, select the OTA partition table, and provision the required AWS component and certificates.
+No build, flash, or runtime test was performed; the repository is missing required build inputs, and no hardware device was detected in the session. Supporting references: ESP32-C3 GPIO, ESP32-C3 LEDC, ESP-IDF 4.4 FreeRTOS for ESP32-C3, ESP-IDF partition tables.

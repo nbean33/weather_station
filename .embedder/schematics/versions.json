@@ -1,0 +1,22 @@
+[
+  {
+    "sourcesHash": "3a5c4d01adab2ae8",
+    "commit": "956b3c7",
+    "branch": "main",
+    "createdAt": "2026-11-16T01:07:40.407Z",
+    "mcuDetected": "ESP32-C3-WROOM-02",
+    "componentCount": 90,
+    "netCount": 95,
+    "fileCount": 6,
+    "files": [
+      "ESP32 sensor board.kicad_pcb",
+      "ESP32 sensor board.kicad_pro",
+      "ESP32 sensor board.kicad_sch",
+      "ESP32-C3-02.kicad_sch",
+      "sensors.kicad_sch",
+      "user_interface.kicad_sch"
+    ],
+    "schematicId": "23c4c226-eb2d-4174-b73a-96105485c06e",
+    "tool": "kicad"
+  }
+]

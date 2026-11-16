@@ -1,0 +1,5814 @@
+{
+  "metadata": {
+    "name": "schematic_project_jps8erhb",
+    "source": {
+      "tool": "kicad",
+      "tool_version": "20260306"
+    },
+    "format": "v4.1"
+  },
+  "components": [
+    {
+      "refdes": "C4",
+      "value": "10u",
+      "sheet": "ESP32 sensor board",
+      "symbol": "T491A106K010AT7280",
+      "footprint": "T491A",
+      "library": "T491A106K010AT7280",
+      "part_number": "T491A106K010AT7280",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "KEMET",
+      "datasheet_url": "https://content.kemet.com/datasheets/KEM_T2005_T491.pdf",
+      "supplier_part_numbers": {
+        "Mouser": "80-T491A106K107280",
+        "Arrow": "T491A106K010AT7280"
+      },
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "+",
+          "net": "3.3V",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "-",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R5",
+      "value": "2K",
+      "sheet": "ESP32 sensor board",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "Net-(U1-PROG1)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R2",
+      "value": "10K",
+      "sheet": "ESP32 sensor board",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "Net-(U1-THERM)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R7",
+      "value": "470",
+      "sheet": "ESP32 sensor board",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "/CHARGING_POWER_GOOD",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "Net-(D1-K)",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "D4",
+      "value": "Red",
+      "sheet": "ESP32 sensor board",
+      "symbol": "LTST-C170KRKT",
+      "footprint": "LEDC2012X120N",
+      "library": "LTST-C170KRKT",
+      "part_number": "LTST-C170KRKT",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "Lite-On",
+      "datasheet_url": "https://componentsearchengine.com/Datasheets/1/LTST-C170KRKT.pdf",
+      "supplier_part_numbers": {
+        "Mouser": "859-LTST-C170KRKT",
+        "Arrow": "LTST-C170KRKT"
+      },
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "K",
+          "net": "/PWR_LED",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "net": "3.3V",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R3",
+      "value": "5k1",
+      "sheet": "ESP32 sensor board",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "Net-(J1-CC2)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R10",
+      "value": "330",
+      "sheet": "ESP32 sensor board",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "/PWR_LED",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C2",
+      "value": "0.1u",
+      "sheet": "ESP32 sensor board",
+      "symbol": "C",
+      "footprint": "C_0805_2012Metric",
+      "library": "SparkFun-Capacitor",
+      "datasheet_url": "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "+5V",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C3",
+      "value": "10u",
+      "sheet": "ESP32 sensor board",
+      "symbol": "T491A106K010AT7280",
+      "footprint": "T491A",
+      "library": "T491A106K010AT7280",
+      "part_number": "T491A106K010AT7280",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "KEMET",
+      "datasheet_url": "https://content.kemet.com/datasheets/KEM_T2005_T491.pdf",
+      "supplier_part_numbers": {
+        "Mouser": "80-T491A106K107280",
+        "Arrow": "T491A106K010AT7280"
+      },
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "+",
+          "net": "+5V",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "-",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R8",
+      "value": "470",
+      "sheet": "ESP32 sensor board",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "/CHARGED",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "Net-(D2-K)",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "D1",
+      "value": "Red",
+      "sheet": "ESP32 sensor board",
+      "symbol": "LTST-C170KRKT",
+      "footprint": "LEDC2012X120N",
+      "library": "LTST-C170KRKT",
+      "part_number": "LTST-C170KRKT",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "Lite-On",
+      "datasheet_url": "https://componentsearchengine.com/Datasheets/1/LTST-C170KRKT.pdf",
+      "supplier_part_numbers": {
+        "Mouser": "859-LTST-C170KRKT",
+        "Arrow": "LTST-C170KRKT"
+      },
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "K",
+          "net": "Net-(D1-K)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "net": "/+5V_USB",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "FB1",
+      "value": "FBMJ2125HM330-T",
+      "sheet": "ESP32 sensor board",
+      "symbol": "FBMJ2125HM330-T",
+      "footprint": "BEADC2012X105N",
+      "library": "FBMJ2125HM330-T",
+      "part_number": "FBMJ2125HM330-T",
+      "part_number_source": "MP",
+      "manufacturer": "Taiyo Yuden",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "+5V",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "Net-(FB1-Pad2)",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R6",
+      "value": "20K",
+      "sheet": "ESP32 sensor board",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "Net-(U1-PROG3)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "J1",
+      "value": "USB_C_Receptacle",
+      "sheet": "ESP32 sensor board",
+      "symbol": "SS-52400-002",
+      "footprint": "BELFUSE_SS-52400-002",
+      "library": "SS-52400-002",
+      "part_number": "SS-52400-002",
+      "part_number_source": "MP",
+      "manufacturer": "BelFuse",
+      "datasheet_url": "https://www.usb.org/sites/default/files/documents/usb_type-c.zip",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "A1",
+          "name": "GNDA1",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "A2",
+          "name": "SSTXP1",
+          "net": "unconnected-(J1-SSTXP1-PadA2)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "A3",
+          "name": "SSTXN1",
+          "net": "unconnected-(J1-SSTXN1-PadA3)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "A4",
+          "name": "VBUSA1",
+          "net": "VBUS",
+          "type": "power_in"
+        },
+        {
+          "number": "A5",
+          "name": "CC1",
+          "net": "Net-(J1-CC1)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "A6",
+          "name": "DP1",
+          "net": "USB_DP",
+          "type": "bidirectional"
+        },
+        {
+          "number": "A7",
+          "name": "DN1",
+          "net": "USB_DN",
+          "type": "bidirectional"
+        },
+        {
+          "number": "A8",
+          "name": "SBU1",
+          "net": "unconnected-(J1-SBU1-PadA8)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "A9",
+          "name": "VBUSA2",
+          "net": "VBUS",
+          "type": "power_in"
+        },
+        {
+          "number": "A10",
+          "name": "SSRXN2",
+          "net": "unconnected-(J1-SSRXN2-PadA10)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "A11",
+          "name": "SSRXP2",
+          "net": "unconnected-(J1-SSRXP2-PadA11)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "A12",
+          "name": "GNDA2",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "B1",
+          "name": "GNDB1",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "B2",
+          "name": "SSTXP2",
+          "net": "unconnected-(J1-SSTXP2-PadB2)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "B3",
+          "name": "SSTXN2",
+          "net": "unconnected-(J1-SSTXN2-PadB3)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "B4",
+          "name": "VBUSB1",
+          "net": "VBUS",
+          "type": "power_in"
+        },
+        {
+          "number": "B5",
+          "name": "CC2",
+          "net": "Net-(J1-CC2)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "B6",
+          "name": "DP2",
+          "net": "USB_DP",
+          "type": "bidirectional"
+        },
+        {
+          "number": "B7",
+          "name": "DN2",
+          "net": "USB_DN",
+          "type": "bidirectional"
+        },
+        {
+          "number": "B8",
+          "name": "SBU2",
+          "net": "unconnected-(J1-SBU2-PadB8)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "B9",
+          "name": "VBUSB2",
+          "net": "VBUS",
+          "type": "power_in"
+        },
+        {
+          "number": "B10",
+          "name": "SSRXN1",
+          "net": "unconnected-(J1-SSRXN1-PadB10)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "B11",
+          "name": "SSRXP1",
+          "net": "unconnected-(J1-SSRXP1-PadB11)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "B12",
+          "name": "GNDB2",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "G1",
+          "name": "GND/SHIELD",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "G2",
+          "name": "GND/SHIELD",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "G3",
+          "name": "GND/SHIELD",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "G4",
+          "name": "GND/SHIELD",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "S1",
+          "name": "GND/SHIELD",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "S2",
+          "name": "GND/SHIELD",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "S3",
+          "name": "GND/SHIELD",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "S4",
+          "name": "GND/SHIELD",
+          "net": "GND",
+          "type": "power_in"
+        }
+      ]
+    },
+    {
+      "refdes": "R1",
+      "value": "10K",
+      "sheet": "ESP32 sensor board",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "Net-(U1-~{TE})",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "U1",
+      "value": "MCP73871",
+      "sheet": "ESP32 sensor board",
+      "symbol": "MCP73871",
+      "footprint": "QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm",
+      "library": "Battery_Management",
+      "part_number": "MCP73871-4CCI/ML",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "Microchip",
+      "datasheet_url": "https://www.snapeda.com/parts/MCP73871-2CCI/ML/Microchip/datasheet/",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "OUT",
+          "net": "Net-(FB1-Pad2)",
+          "type": "power_out"
+        },
+        {
+          "number": "2",
+          "name": "VPCC",
+          "net": "/+5V_USB",
+          "type": "input"
+        },
+        {
+          "number": "3",
+          "name": "SEL",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "number": "4",
+          "name": "PROG2",
+          "net": "/+5V_USB",
+          "type": "input"
+        },
+        {
+          "number": "5",
+          "name": "THERM",
+          "net": "Net-(U1-THERM)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "6",
+          "name": "~{PG}",
+          "net": "/CHARGING_POWER_GOOD",
+          "type": "open_collector"
+        },
+        {
+          "number": "7",
+          "name": "STAT2",
+          "net": "/CHARGING",
+          "type": "open_collector"
+        },
+        {
+          "number": "8",
+          "name": "STAT1/~{LBO}",
+          "net": "/CHARGED",
+          "type": "open_collector"
+        },
+        {
+          "number": "9",
+          "name": "~{TE}",
+          "net": "Net-(U1-~{TE})",
+          "type": "input"
+        },
+        {
+          "number": "10",
+          "name": "V_{SS}",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "11",
+          "name": "V_{SS}",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "12",
+          "name": "PROG3",
+          "net": "Net-(U1-PROG3)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "13",
+          "name": "PROG1",
+          "net": "Net-(U1-PROG1)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "14",
+          "name": "V_{BAT}",
+          "net": "/VBAT",
+          "type": "power_out"
+        },
+        {
+          "number": "15",
+          "name": "V_{BAT}",
+          "net": "/VBAT",
+          "type": "passive"
+        },
+        {
+          "number": "16",
+          "name": "V_{BAT_SENSE}",
+          "net": "/VBAT",
+          "type": "input"
+        },
+        {
+          "number": "17",
+          "name": "CE",
+          "net": "/+5V_USB",
+          "type": "input"
+        },
+        {
+          "number": "18",
+          "name": "IN",
+          "net": "/+5V_USB",
+          "type": "power_in"
+        },
+        {
+          "number": "19",
+          "name": "IN",
+          "net": "/+5V_USB",
+          "type": "passive"
+        },
+        {
+          "number": "20",
+          "name": "OUT",
+          "net": "Net-(FB1-Pad2)",
+          "type": "passive"
+        },
+        {
+          "number": "21",
+          "name": "V_{SS}",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "F1",
+      "value": "0ZCH0110AF2E",
+      "sheet": "ESP32 sensor board",
+      "symbol": "0ZCH0110AF2E",
+      "footprint": "FUSC3226X100N",
+      "library": "SamacSys_Parts",
+      "part_number": "0ZCH0110AF2E",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "Bel Circuit Protection",
+      "datasheet_url": "https://www.belfuse.com/resources/datasheets/circuitprotection/ds-cp-0zch-series.pdf",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "VBUS",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "/+5V_USB",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "U2",
+      "value": "LM1117MPX-3.3_NOPB",
+      "sheet": "ESP32 sensor board",
+      "symbol": "LM1117MPX-3.3_NOPB",
+      "footprint": "VREG_LM1117MPX-3.3",
+      "library": "LM1117MPX-3.3_NOPB",
+      "part_number": "LM1117MPX-3.3/NOPB",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "Texas Instruments",
+      "datasheet_url": "http://www.ti.com/lit/ds/symlink/lm1117.pdf",
+      "supplier_part_numbers": {
+        "Mouser": "926-LM1117MPX3.3NOPB"
+      },
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "2",
+          "name": "VOUT_2",
+          "net": "3.3V",
+          "type": "output"
+        },
+        {
+          "number": "3",
+          "name": "VIN",
+          "net": "+5V",
+          "type": "input"
+        },
+        {
+          "number": "4",
+          "name": "VOUT_4",
+          "net": "3.3V",
+          "type": "output"
+        }
+      ]
+    },
+    {
+      "refdes": "C5",
+      "value": "0.1u",
+      "sheet": "ESP32 sensor board",
+      "symbol": "C",
+      "footprint": "C_0805_2012Metric",
+      "library": "SparkFun-Capacitor",
+      "datasheet_url": "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "3.3V",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "D2",
+      "value": "Green",
+      "sheet": "ESP32 sensor board",
+      "symbol": "LTST-C170GKT",
+      "footprint": "LEDC2012X120N",
+      "library": "LTST-C170GKT",
+      "part_number": "LTST-C170GKT",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "Lite-On",
+      "datasheet_url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/895/LTST-C170GKT.pdf",
+      "supplier_part_numbers": {
+        "Mouser": "859-LTST-C170GKT",
+        "Arrow": "LTST-C170GKT"
+      },
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "K",
+          "net": "Net-(D2-K)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "net": "/+5V_USB",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "D3",
+      "value": "Blue",
+      "sheet": "ESP32 sensor board",
+      "symbol": "LTST-C170TBKT",
+      "footprint": "LEDC2012X120N",
+      "library": "LTST-C170TBKT",
+      "part_number": "LTST-C170TBKT",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "Lite-On",
+      "datasheet_url": "https://componentsearchengine.com/Datasheets/1/LTST-C170TBKT.pdf",
+      "supplier_part_numbers": {
+        "Mouser": "859-LTST-C170TBKT",
+        "Arrow": "LTST-C170TBKT"
+      },
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "K",
+          "net": "Net-(D3-K)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "net": "/+5V_USB",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C6",
+      "value": "1u",
+      "sheet": "ESP32 sensor board",
+      "symbol": "C",
+      "footprint": "C_0805_2012Metric",
+      "library": "SparkFun-Capacitor",
+      "datasheet_url": "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "/+5V_USB",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R4",
+      "value": "5k1",
+      "sheet": "ESP32 sensor board",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "Net-(J1-CC1)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C1",
+      "value": "0.1u",
+      "sheet": "ESP32 sensor board",
+      "symbol": "C",
+      "footprint": "C_0805_2012Metric",
+      "library": "SparkFun-Capacitor",
+      "datasheet_url": "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "VBUS",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R9",
+      "value": "470",
+      "sheet": "ESP32 sensor board",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "/CHARGING",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "Net-(D3-K)",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "J2",
+      "value": "JST_2mm_LiPo",
+      "sheet": "ESP32 sensor board",
+      "symbol": "B2B-PH-SM4-TB",
+      "footprint": "JST_B2B-PH-SM4-TB",
+      "library": "B2B-PH-SM4-TB",
+      "part_number": "B2B-PH-SM4-TB",
+      "part_number_source": "MP",
+      "manufacturer": "JST",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "/VBAT",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R15",
+      "value": "50",
+      "sheet": "ESP32-C3-02",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "/ESP32-C3-02/MOSI_DI",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "Net-(U3-IO7)",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R22",
+      "value": "50",
+      "sheet": "ESP32-C3-02",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "/ESP32-C3-02/MISO_DO",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "Net-(U6-DO(IO1))",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "TP4",
+      "value": "TEST CS_SD",
+      "sheet": "ESP32-C3-02",
+      "symbol": "TestPoint",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "library": "Connector",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "/ESP32-C3-02/CS_SD",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R16",
+      "value": "50",
+      "sheet": "ESP32-C3-02",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "Net-(J3-DAT0)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "/ESP32-C3-02/MISO_DO",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C11",
+      "value": "1u",
+      "sheet": "ESP32-C3-02",
+      "symbol": "C",
+      "footprint": "C_0805_2012Metric",
+      "library": "SparkFun-Capacitor",
+      "datasheet_url": "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "Net-(U4-VBUS)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C7",
+      "value": "10u",
+      "sheet": "ESP32-C3-02",
+      "symbol": "T491A106K010AT7280",
+      "footprint": "T491A",
+      "library": "T491A106K010AT7280",
+      "part_number": "T491A106K010AT7280",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "KEMET",
+      "datasheet_url": "https://content.kemet.com/datasheets/KEM_T2005_T491.pdf",
+      "supplier_part_numbers": {
+        "Mouser": "80-T491A106K107280",
+        "Arrow": "T491A106K010AT7280"
+      },
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "+",
+          "net": "3.3V",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "-",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "D6",
+      "value": "Red",
+      "sheet": "ESP32-C3-02",
+      "symbol": "LTST-C170KRKT",
+      "footprint": "LEDC2012X120N",
+      "library": "LTST-C170KRKT",
+      "part_number": "LTST-C170KRKT",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "Lite-On",
+      "datasheet_url": "https://componentsearchengine.com/Datasheets/1/LTST-C170KRKT.pdf",
+      "supplier_part_numbers": {
+        "Mouser": "859-LTST-C170KRKT",
+        "Arrow": "LTST-C170KRKT"
+      },
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "K",
+          "net": "Net-(D6-K)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "net": "3.3V",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R12",
+      "value": "22K1",
+      "sheet": "ESP32-C3-02",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "VBUS",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "Net-(U4-VBUS)",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "TP1",
+      "value": "Test MOSI",
+      "sheet": "ESP32-C3-02",
+      "symbol": "TestPoint",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "library": "Connector",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "/ESP32-C3-02/MOSI_DI",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R19",
+      "value": "10K",
+      "sheet": "ESP32-C3-02",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "/ESP32-C3-02/CS_SD",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "3.3V",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R20",
+      "value": "50",
+      "sheet": "ESP32-C3-02",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "/ESP32-C3-02/SCLK",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "Net-(U3-IO6)",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "J3",
+      "value": "GSD090012SEU",
+      "sheet": "ESP32-C3-02",
+      "symbol": "GSD090012SEU",
+      "footprint": "AMPHENOL_GSD090012SEU",
+      "library": "GSD090012SEU",
+      "part_number": "GSD090012SEU",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "Amphenol",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "CD/DAT3",
+          "net": "/ESP32-C3-02/CS_SD",
+          "type": "bidirectional"
+        },
+        {
+          "number": "2",
+          "name": "CMD",
+          "net": "/ESP32-C3-02/MOSI_DI",
+          "type": "bidirectional"
+        },
+        {
+          "number": "3",
+          "name": "VSS1",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "4",
+          "name": "VDD1",
+          "net": "3.3V",
+          "type": "power_in"
+        },
+        {
+          "number": "5",
+          "name": "CLK",
+          "net": "/ESP32-C3-02/SCLK",
+          "type": "bidirectional"
+        },
+        {
+          "number": "6",
+          "name": "VSS2",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "7",
+          "name": "DAT0",
+          "net": "Net-(J3-DAT0)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "8",
+          "name": "DAT1",
+          "net": "GND",
+          "type": "bidirectional"
+        },
+        {
+          "number": "9",
+          "name": "DAT2",
+          "net": "GND",
+          "type": "bidirectional"
+        },
+        {
+          "number": "CD_IND",
+          "name": "CD_IND",
+          "net": "unconnected-(J3-PadCD_IND)",
+          "type": "passive"
+        },
+        {
+          "number": "G1",
+          "name": "SHIELD_GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "G2",
+          "name": "SHIELD_GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "G3",
+          "name": "SHIELD_GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "G4",
+          "name": "SHIELD_GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "WP",
+          "name": "WP",
+          "net": "unconnected-(J3-PadWP)",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "TP2",
+      "value": "Test MISO",
+      "sheet": "ESP32-C3-02",
+      "symbol": "TestPoint",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "library": "Connector",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "/ESP32-C3-02/MISO_DO",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C8",
+      "value": "0.1u",
+      "sheet": "ESP32-C3-02",
+      "symbol": "C",
+      "footprint": "C_0805_2012Metric",
+      "library": "SparkFun-Capacitor",
+      "datasheet_url": "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "3.3V",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C9",
+      "value": "4.7u",
+      "sheet": "ESP32-C3-02",
+      "symbol": "T491A106K010AT7280",
+      "footprint": "T491A",
+      "library": "T491A106K010AT7280",
+      "part_number": "T491A106K010AT7280",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "KEMET",
+      "datasheet_url": "https://content.kemet.com/datasheets/KEM_T2005_T491.pdf",
+      "supplier_part_numbers": {
+        "Mouser": "80-T491A106K107280",
+        "Arrow": "T491A106K010AT7280"
+      },
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "+",
+          "net": "3.3V",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "-",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R13",
+      "value": "47K5",
+      "sheet": "ESP32-C3-02",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "Net-(U4-VBUS)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "U5",
+      "value": "USBLC6-2SC6",
+      "sheet": "ESP32-C3-02",
+      "symbol": "USBLC6-2SC6",
+      "footprint": "SOT-23-6",
+      "library": "Power_Protection",
+      "part_number": "USBLC6-2SC6",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "STMicroelectronics",
+      "datasheet_url": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+      "supplier_part_numbers": {
+        "Mouser": "511-USBLC6-2SC6"
+      },
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "I/O1",
+          "net": "/ESP32-C3-02/USB_D-",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "I/O2",
+          "net": "/ESP32-C3-02/USB_D+",
+          "type": "passive"
+        },
+        {
+          "number": "4",
+          "name": "I/O2",
+          "net": "USB_DP",
+          "type": "passive"
+        },
+        {
+          "number": "5",
+          "name": "VBUS",
+          "net": "VBUS",
+          "type": "passive"
+        },
+        {
+          "number": "6",
+          "name": "I/O1",
+          "net": "USB_DN",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R14",
+      "value": "330",
+      "sheet": "ESP32-C3-02",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "Net-(U4-~{TXT}{slash}GPIO.2)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "Net-(D5-K)",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C13",
+      "value": "0.1u",
+      "sheet": "ESP32-C3-02",
+      "symbol": "C",
+      "footprint": "C_0805_2012Metric",
+      "library": "SparkFun-Capacitor",
+      "datasheet_url": "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "3.3V",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C12",
+      "value": "10u",
+      "sheet": "ESP32-C3-02",
+      "symbol": "T491A106K010AT7280",
+      "footprint": "T491A",
+      "library": "T491A106K010AT7280",
+      "part_number": "T491A106K010AT7280",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "KEMET",
+      "datasheet_url": "https://content.kemet.com/datasheets/KEM_T2005_T491.pdf",
+      "supplier_part_numbers": {
+        "Mouser": "80-T491A106K107280",
+        "Arrow": "T491A106K010AT7280"
+      },
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "+",
+          "net": "3.3V",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "-",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R18",
+      "value": "330",
+      "sheet": "ESP32-C3-02",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "Net-(U4-~{RXT}{slash}GPIO.3)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "Net-(D6-K)",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C10",
+      "value": "0.1u",
+      "sheet": "ESP32-C3-02",
+      "symbol": "C",
+      "footprint": "C_0805_2012Metric",
+      "library": "SparkFun-Capacitor",
+      "datasheet_url": "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "3.3V",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "U4",
+      "value": "CP2102N-A02-GQFN20",
+      "sheet": "ESP32-C3-02",
+      "symbol": "CP2102N-Axx-xQFN20",
+      "footprint": "SiliconLabs_QFN-20-1EP_3x3mm_P0.5mm_EP1.8x1.8mm",
+      "library": "Interface_USB",
+      "part_number": "CP2102N-A02-GQFN20",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "Silicon Laboratories",
+      "datasheet_url": "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "RS485/GPIO.1",
+          "net": "unconnected-(U4-RS485{slash}GPIO.1-Pad1)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "2",
+          "name": "CLK/GPIO.0",
+          "net": "unconnected-(U4-CLK{slash}GPIO.0-Pad2)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "3",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "4",
+          "name": "D+",
+          "net": "/ESP32-C3-02/USB_D+",
+          "type": "bidirectional"
+        },
+        {
+          "number": "5",
+          "name": "D-",
+          "net": "/ESP32-C3-02/USB_D-",
+          "type": "bidirectional"
+        },
+        {
+          "number": "6",
+          "name": "VDD",
+          "net": "3.3V",
+          "type": "power_in"
+        },
+        {
+          "number": "7",
+          "name": "VREGIN",
+          "net": "3.3V",
+          "type": "power_in"
+        },
+        {
+          "number": "8",
+          "name": "VBUS",
+          "net": "Net-(U4-VBUS)",
+          "type": "input"
+        },
+        {
+          "number": "9",
+          "name": "~{RST}",
+          "net": "Net-(U4-~{RST})",
+          "type": "input"
+        },
+        {
+          "number": "10",
+          "name": "NC",
+          "net": "unconnected-(U4-NC-Pad10)",
+          "type": "no_connect"
+        },
+        {
+          "number": "11",
+          "name": "~{SUSPEND}",
+          "net": "unconnected-(U4-~{SUSPEND}-Pad11)",
+          "type": "output"
+        },
+        {
+          "number": "12",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "13",
+          "name": "~{WAKEUP}",
+          "net": "unconnected-(U4-~{WAKEUP}-Pad13)",
+          "type": "input"
+        },
+        {
+          "number": "14",
+          "name": "SUSPEND",
+          "net": "unconnected-(U4-SUSPEND-Pad14)",
+          "type": "output"
+        },
+        {
+          "number": "15",
+          "name": "~{CTS}",
+          "net": "/ESP32-C3-02/DTS",
+          "type": "input"
+        },
+        {
+          "number": "16",
+          "name": "~{RTS}",
+          "net": "RTS",
+          "type": "output"
+        },
+        {
+          "number": "17",
+          "name": "RXD",
+          "net": "/ESP32-C3-02/RX_TX",
+          "type": "input"
+        },
+        {
+          "number": "18",
+          "name": "TXD",
+          "net": "/ESP32-C3-02/TX_RX",
+          "type": "output"
+        },
+        {
+          "number": "19",
+          "name": "~{RXT}/GPIO.3",
+          "net": "Net-(U4-~{RXT}{slash}GPIO.3)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "20",
+          "name": "~{TXT}/GPIO.2",
+          "net": "Net-(U4-~{TXT}{slash}GPIO.2)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "21",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "U3",
+      "value": "ESP32-C3-WROOM-02-H4",
+      "sheet": "ESP32-C3-02",
+      "symbol": "ESP32-C3-WROOM-02-H4",
+      "footprint": "MODULE_ESP32-C3-WROOM-02-H4",
+      "library": "ESP32-C3-WROOM-02-H4",
+      "part_number": "ESP32-C3-WROOM-02-H4",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "Espressif",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "3V3",
+          "net": "3.3V",
+          "type": "power_in"
+        },
+        {
+          "number": "2",
+          "name": "EN",
+          "net": "EN",
+          "type": "input"
+        },
+        {
+          "number": "3",
+          "name": "IO4",
+          "net": "SDA",
+          "type": "bidirectional"
+        },
+        {
+          "number": "4",
+          "name": "IO5",
+          "net": "/ESP32-C3-02/CS_SD",
+          "type": "bidirectional"
+        },
+        {
+          "number": "5",
+          "name": "IO6",
+          "net": "Net-(U3-IO6)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "6",
+          "name": "IO7",
+          "net": "Net-(U3-IO7)",
+          "type": "bidirectional"
+        },
+        {
+          "number": "7",
+          "name": "IO8",
+          "net": "GPIO8",
+          "type": "bidirectional"
+        },
+        {
+          "number": "8",
+          "name": "IO9",
+          "net": "BOOT",
+          "type": "bidirectional"
+        },
+        {
+          "number": "9",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "10",
+          "name": "IO10",
+          "net": "/ESP32-C3-02/CS",
+          "type": "bidirectional"
+        },
+        {
+          "number": "11",
+          "name": "RXD",
+          "net": "/ESP32-C3-02/TX_RX",
+          "type": "bidirectional"
+        },
+        {
+          "number": "12",
+          "name": "TXD",
+          "net": "/ESP32-C3-02/RX_TX",
+          "type": "bidirectional"
+        },
+        {
+          "number": "13",
+          "name": "IO18",
+          "net": "GPIO18",
+          "type": "bidirectional"
+        },
+        {
+          "number": "14",
+          "name": "IO19",
+          "net": "GPIO19",
+          "type": "bidirectional"
+        },
+        {
+          "number": "15",
+          "name": "IO3",
+          "net": "SCL",
+          "type": "bidirectional"
+        },
+        {
+          "number": "16",
+          "name": "IO2",
+          "net": "/ESP32-C3-02/MISO_DO",
+          "type": "bidirectional"
+        },
+        {
+          "number": "17",
+          "name": "IO1",
+          "net": "PHOTO_C",
+          "type": "bidirectional"
+        },
+        {
+          "number": "18",
+          "name": "IO0",
+          "net": "MIC_OUT",
+          "type": "bidirectional"
+        },
+        {
+          "number": "19",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "20",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "21",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "22",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "23",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "24",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "25",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "26",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "27",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "28",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "29",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "30",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "31",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "32",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "33",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "34",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "35",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "36",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "37",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "38",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "39",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        }
+      ]
+    },
+    {
+      "refdes": "D5",
+      "value": "Green",
+      "sheet": "ESP32-C3-02",
+      "symbol": "LTST-C170GKT",
+      "footprint": "LEDC2012X120N",
+      "library": "LTST-C170GKT",
+      "part_number": "LTST-C170GKT",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "Lite-On",
+      "datasheet_url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/895/LTST-C170GKT.pdf",
+      "supplier_part_numbers": {
+        "Mouser": "859-LTST-C170GKT",
+        "Arrow": "LTST-C170GKT"
+      },
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "K",
+          "net": "Net-(D5-K)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "net": "3.3V",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R11",
+      "value": "1K",
+      "sheet": "ESP32-C3-02",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "3.3V",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "Net-(U4-~{RST})",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "U6",
+      "value": "W25Q32JVSSIQ",
+      "sheet": "ESP32-C3-02",
+      "symbol": "W25Q32JVSSIQ",
+      "footprint": "SOIC127P790X216-8N",
+      "library": "W25Q32JVSSIQ",
+      "part_number": "W25Q32JVSSIQ",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "Winbond",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "~{CS}",
+          "net": "/ESP32-C3-02/CS",
+          "type": "input"
+        },
+        {
+          "number": "2",
+          "name": "DO(IO1)",
+          "net": "Net-(U6-DO(IO1))",
+          "type": "bidirectional"
+        },
+        {
+          "number": "3",
+          "name": "~{WP}(IO2)",
+          "net": "3.3V",
+          "type": "bidirectional"
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "5",
+          "name": "DI(IO0)",
+          "net": "/ESP32-C3-02/MOSI_DI",
+          "type": "bidirectional"
+        },
+        {
+          "number": "6",
+          "name": "CLK",
+          "net": "/ESP32-C3-02/SCLK",
+          "type": "input"
+        },
+        {
+          "number": "7",
+          "name": "~{HOLD}/~{RESET}(IO3)",
+          "net": "3.3V",
+          "type": "bidirectional"
+        },
+        {
+          "number": "8",
+          "name": "VCC",
+          "net": "3.3V",
+          "type": "power_in"
+        }
+      ]
+    },
+    {
+      "refdes": "TP3",
+      "value": "Test CLK",
+      "sheet": "ESP32-C3-02",
+      "symbol": "TestPoint",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "library": "Connector",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "/ESP32-C3-02/SCLK",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "TP5",
+      "value": "TEST CS",
+      "sheet": "ESP32-C3-02",
+      "symbol": "TestPoint",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "library": "Connector",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "/ESP32-C3-02/CS",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C14",
+      "value": "0.1u",
+      "sheet": "ESP32-C3-02",
+      "symbol": "C",
+      "footprint": "C_0805_2012Metric",
+      "library": "SparkFun-Capacitor",
+      "datasheet_url": "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "3.3V",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R27",
+      "value": "1M",
+      "sheet": "sensors",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "Net-(U8-IN+)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "3.3V",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R30",
+      "value": "1K",
+      "sheet": "sensors",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "Net-(C19-Pad2)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "Net-(U8-IN-)",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R31",
+      "value": "22K",
+      "sheet": "sensors",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "Net-(U8-IN-)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "Net-(R17-Pad3)",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R24",
+      "value": "4K7",
+      "sheet": "sensors",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "3.3V",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "SCL",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "MK1",
+      "value": "CMC-5042PF-AC",
+      "sheet": "sensors",
+      "symbol": "CMC-5042PF-AC",
+      "footprint": "CUI_CMC-5042PF-AC",
+      "library": "CMC-5042PF-AC",
+      "part_number": "CMC-5042PF-AC",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "CUI INC",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "GND",
+          "name": "",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "OUT",
+          "name": "",
+          "net": "Net-(C17-Pad2)",
+          "type": "output"
+        }
+      ]
+    },
+    {
+      "refdes": "C15",
+      "value": "0.1u",
+      "sheet": "sensors",
+      "symbol": "C",
+      "footprint": "C_0805_2012Metric",
+      "library": "SparkFun-Capacitor",
+      "datasheet_url": "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "3.3V",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "U7",
+      "value": "BME280",
+      "sheet": "sensors",
+      "symbol": "BME280",
+      "footprint": "PSON65P250X250X100-8N",
+      "library": "BME280",
+      "part_number": "BME280",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "Bosch",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "2",
+          "name": "2",
+          "net": "3.3V",
+          "type": "passive"
+        },
+        {
+          "number": "8",
+          "name": "8",
+          "net": "3.3V",
+          "type": "passive"
+        },
+        {
+          "number": "7",
+          "name": "7",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "1",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "3",
+          "net": "SDA",
+          "type": "passive"
+        },
+        {
+          "number": "4",
+          "name": "4",
+          "net": "SCL",
+          "type": "passive"
+        },
+        {
+          "number": "6",
+          "name": "6",
+          "net": "3.3V",
+          "type": "passive"
+        },
+        {
+          "number": "5",
+          "name": "5",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C25",
+      "value": "10n",
+      "sheet": "sensors",
+      "symbol": "C",
+      "footprint": "C_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "PHOTO_C",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C23",
+      "value": "0.1u",
+      "sheet": "sensors",
+      "symbol": "C",
+      "footprint": "C_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "3.3V",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C24",
+      "value": "10n",
+      "sheet": "sensors",
+      "symbol": "C",
+      "footprint": "C_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "PHOTO_C",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C20",
+      "value": "100p",
+      "sheet": "sensors",
+      "symbol": "C",
+      "footprint": "C_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "Net-(U8-IN-)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "MIC_OUT",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R25",
+      "value": "4K7",
+      "sheet": "sensors",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "3.3V",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "SDA",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C19",
+      "value": "10u",
+      "sheet": "sensors",
+      "symbol": "C",
+      "footprint": "C_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "Net-(C19-Pad2)",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C17",
+      "value": "10n",
+      "sheet": "sensors",
+      "symbol": "C",
+      "footprint": "C_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "Net-(U8-IN+)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "Net-(C17-Pad2)",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R29",
+      "value": "1M",
+      "sheet": "sensors",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "Net-(U8-IN+)",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C18",
+      "value": "0.1u",
+      "sheet": "sensors",
+      "symbol": "C",
+      "footprint": "C_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "3.3V",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "U8",
+      "value": "MAX4466EXK+T",
+      "sheet": "sensors",
+      "symbol": "MAX4466EXK",
+      "footprint": "SOT65P210X110-5N",
+      "library": "MAX4466EXK",
+      "part_number": "MAX4466EXK+T",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "Analog Devices Inc.",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "IN+",
+          "net": "Net-(U8-IN+)",
+          "type": "input"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "3",
+          "name": "IN-",
+          "net": "Net-(U8-IN-)",
+          "type": "input"
+        },
+        {
+          "number": "4",
+          "name": "OUT",
+          "net": "MIC_OUT",
+          "type": "output"
+        },
+        {
+          "number": "5",
+          "name": "VCC",
+          "net": "3.3V",
+          "type": "power_in"
+        }
+      ]
+    },
+    {
+      "refdes": "C16",
+      "value": "0.1u",
+      "sheet": "sensors",
+      "symbol": "C",
+      "footprint": "C_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "Net-(C16-Pad1)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R28",
+      "value": "2K",
+      "sheet": "sensors",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "Net-(C17-Pad2)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "Net-(C16-Pad1)",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R17",
+      "value": "35WR100KLFTR",
+      "sheet": "sensors",
+      "symbol": "35WR100KLFTR",
+      "footprint": "TRIM_35WR100KLFTR",
+      "library": "35WR100KLFTR",
+      "part_number": "35WR100KLFTR",
+      "part_number_source": "MP",
+      "manufacturer": "TT Electronics/BI",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "MIC_OUT",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "MIC_OUT",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "",
+          "net": "Net-(R17-Pad3)",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R23",
+      "value": "10K",
+      "sheet": "sensors",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "PHOTO_C",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R26",
+      "value": "2K",
+      "sheet": "sensors",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "Net-(C16-Pad1)",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "3.3V",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "Q1",
+      "value": "TEMT6000X01",
+      "sheet": "sensors",
+      "symbol": "TEMT6000X01",
+      "footprint": "TRANS_TEMT6000X01",
+      "library": "TEMT6000X01",
+      "part_number": "TEMT6000X01",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "VISHAY",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "PHOTO_C",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "",
+          "net": "3.3V",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "SW2",
+      "value": "1101NE",
+      "sheet": "user_interface",
+      "symbol": "USLPT2819DT2TR",
+      "footprint": "SW_USLPT2819DT2TR",
+      "library": "USLPT2819DT2TR",
+      "part_number": "1101NE",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "TE CONNECTIVITY",
+      "datasheet_url": "https://www.sparkfun.com/datasheets/Components/1101.pdf",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "",
+          "net": "EN",
+          "type": "passive"
+        },
+        {
+          "number": "4",
+          "name": "",
+          "net": "EN",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C22",
+      "value": "1u",
+      "sheet": "user_interface",
+      "symbol": "C",
+      "footprint": "C_0805_2012Metric",
+      "library": "SparkFun-Capacitor",
+      "datasheet_url": "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "EN",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "C21",
+      "value": "0.1u",
+      "sheet": "user_interface",
+      "symbol": "C",
+      "footprint": "C_0805_2012Metric",
+      "library": "SparkFun-Capacitor",
+      "datasheet_url": "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "BOOT",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R32",
+      "value": "10K",
+      "sheet": "user_interface",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "EN",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "3.3V",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R34",
+      "value": "10K",
+      "sheet": "user_interface",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "RTS",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "Net-(Q3-B)",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "Q2",
+      "value": "BC817",
+      "sheet": "user_interface",
+      "symbol": "BC817",
+      "footprint": "SOT-23",
+      "library": "Transistor_BJT",
+      "part_number": "BC817",
+      "part_number_source": "Manufacturer_Part_Number",
+      "datasheet_url": "https://www.onsemi.com/pub/Collateral/BC818-D.pdf",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "B",
+          "net": "Net-(Q2-B)",
+          "type": "input"
+        },
+        {
+          "number": "2",
+          "name": "E",
+          "net": "RTS",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "C",
+          "net": "EN",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "Q3",
+      "value": "BC817",
+      "sheet": "user_interface",
+      "symbol": "BC817",
+      "footprint": "SOT-23",
+      "library": "Transistor_BJT",
+      "part_number": "BC817",
+      "part_number_source": "Manufacturer_Part_Number",
+      "datasheet_url": "https://www.onsemi.com/pub/Collateral/BC818-D.pdf",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "B",
+          "net": "Net-(Q3-B)",
+          "type": "input"
+        },
+        {
+          "number": "2",
+          "name": "E",
+          "net": "/ESP32-C3-02/DTS",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "C",
+          "net": "BOOT",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "R33",
+      "value": "10K",
+      "sheet": "user_interface",
+      "symbol": "R",
+      "footprint": "R_0805_2012Metric",
+      "library": "Device",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "/ESP32-C3-02/DTS",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "Net-(Q2-B)",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "J4",
+      "value": "B4B-XH-AM",
+      "sheet": "user_interface",
+      "symbol": "B4B-XH-AM__LF__SN_",
+      "footprint": "JST_B4B-XH-AM__LF__SN_",
+      "library": "B4B-XH-AM__LF__SN_",
+      "part_number": "B4B-XH-AM",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "JST",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "3.3V",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "SDA",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "3",
+          "net": "SCL",
+          "type": "passive"
+        },
+        {
+          "number": "4",
+          "name": "4",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "J6",
+      "value": "Conn_01x05",
+      "sheet": "user_interface",
+      "symbol": "Conn_01x05",
+      "footprint": "PinHeader_1x05_P2.54mm_Vertical",
+      "library": "Connector_Generic",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "net": "3.3V",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "net": "GPIO8",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "Pin_3",
+          "net": "GPIO18",
+          "type": "passive"
+        },
+        {
+          "number": "4",
+          "name": "Pin_4",
+          "net": "GPIO19",
+          "type": "passive"
+        },
+        {
+          "number": "5",
+          "name": "Pin_5",
+          "net": "GND",
+          "type": "passive"
+        }
+      ]
+    },
+    {
+      "refdes": "SW1",
+      "value": "1101NE",
+      "sheet": "user_interface",
+      "symbol": "USLPT2819DT2TR",
+      "footprint": "SW_USLPT2819DT2TR",
+      "library": "USLPT2819DT2TR",
+      "part_number": "1101NE",
+      "part_number_source": "Manufacturer_Part_Number",
+      "manufacturer": "TE CONNECTIVITY",
+      "datasheet_url": "https://www.sparkfun.com/datasheets/Components/1101.pdf",
+      "dnp": false,
+      "in_bom": true,
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "",
+          "net": "BOOT",
+          "type": "passive"
+        },
+        {
+          "number": "4",
+          "name": "",
+          "net": "BOOT",
+          "type": "passive"
+        }
+      ]
+    }
+  ],
+  "nets": [
+    {
+      "name": "3.3V",
+      "connections": [
+        {
+          "component": "C4",
+          "pin": "1",
+          "pin_name": "+"
+        },
+        {
+          "component": "C5",
+          "pin": "1"
+        },
+        {
+          "component": "C9",
+          "pin": "1",
+          "pin_name": "+"
+        },
+        {
+          "component": "C12",
+          "pin": "1",
+          "pin_name": "+"
+        },
+        {
+          "component": "D4",
+          "pin": "2",
+          "pin_name": "A"
+        },
+        {
+          "component": "R11",
+          "pin": "1"
+        },
+        {
+          "component": "U2",
+          "pin": "2",
+          "pin_name": "VOUT_2"
+        },
+        {
+          "component": "U2",
+          "pin": "4",
+          "pin_name": "VOUT_4"
+        },
+        {
+          "component": "C14",
+          "pin": "1"
+        },
+        {
+          "component": "C18",
+          "pin": "1"
+        },
+        {
+          "component": "U8",
+          "pin": "5",
+          "pin_name": "VCC"
+        },
+        {
+          "component": "D6",
+          "pin": "2",
+          "pin_name": "A"
+        },
+        {
+          "component": "U3",
+          "pin": "1",
+          "pin_name": "3V3"
+        },
+        {
+          "component": "J4",
+          "pin": "1",
+          "pin_name": "1"
+        },
+        {
+          "component": "C23",
+          "pin": "1"
+        },
+        {
+          "component": "C13",
+          "pin": "2"
+        },
+        {
+          "component": "U7",
+          "pin": "2",
+          "pin_name": "2"
+        },
+        {
+          "component": "U7",
+          "pin": "6",
+          "pin_name": "6"
+        },
+        {
+          "component": "U7",
+          "pin": "8",
+          "pin_name": "8"
+        },
+        {
+          "component": "Q1",
+          "pin": "3"
+        },
+        {
+          "component": "R32",
+          "pin": "2"
+        },
+        {
+          "component": "R25",
+          "pin": "1"
+        },
+        {
+          "component": "R19",
+          "pin": "2"
+        },
+        {
+          "component": "U4",
+          "pin": "6",
+          "pin_name": "VDD"
+        },
+        {
+          "component": "U4",
+          "pin": "7",
+          "pin_name": "VREGIN"
+        },
+        {
+          "component": "D5",
+          "pin": "2",
+          "pin_name": "A"
+        },
+        {
+          "component": "J6",
+          "pin": "1",
+          "pin_name": "Pin_1"
+        },
+        {
+          "component": "C15",
+          "pin": "2"
+        },
+        {
+          "component": "C7",
+          "pin": "1",
+          "pin_name": "+"
+        },
+        {
+          "component": "R27",
+          "pin": "2"
+        },
+        {
+          "component": "R26",
+          "pin": "2"
+        },
+        {
+          "component": "U6",
+          "pin": "3",
+          "pin_name": "~{WP}(IO2)"
+        },
+        {
+          "component": "U6",
+          "pin": "7",
+          "pin_name": "~{HOLD}/~{RESET}(IO3)"
+        },
+        {
+          "component": "U6",
+          "pin": "8",
+          "pin_name": "VCC"
+        },
+        {
+          "component": "J3",
+          "pin": "4",
+          "pin_name": "VDD1"
+        },
+        {
+          "component": "C8",
+          "pin": "1"
+        },
+        {
+          "component": "R24",
+          "pin": "1"
+        },
+        {
+          "component": "C10",
+          "pin": "1"
+        }
+      ]
+    },
+    {
+      "name": "GND",
+      "connections": [
+        {
+          "component": "C4",
+          "pin": "2",
+          "pin_name": "-"
+        },
+        {
+          "component": "R5",
+          "pin": "2"
+        },
+        {
+          "component": "C5",
+          "pin": "2"
+        },
+        {
+          "component": "R10",
+          "pin": "1"
+        },
+        {
+          "component": "C9",
+          "pin": "2",
+          "pin_name": "-"
+        },
+        {
+          "component": "C12",
+          "pin": "2",
+          "pin_name": "-"
+        },
+        {
+          "component": "C1",
+          "pin": "2"
+        },
+        {
+          "component": "J1",
+          "pin": "A1",
+          "pin_name": "GNDA1"
+        },
+        {
+          "component": "J1",
+          "pin": "A12",
+          "pin_name": "GNDA2"
+        },
+        {
+          "component": "J1",
+          "pin": "B1",
+          "pin_name": "GNDB1"
+        },
+        {
+          "component": "J1",
+          "pin": "B12",
+          "pin_name": "GNDB2"
+        },
+        {
+          "component": "J1",
+          "pin": "G1",
+          "pin_name": "GND/SHIELD"
+        },
+        {
+          "component": "J1",
+          "pin": "G2",
+          "pin_name": "GND/SHIELD"
+        },
+        {
+          "component": "J1",
+          "pin": "G3",
+          "pin_name": "GND/SHIELD"
+        },
+        {
+          "component": "J1",
+          "pin": "G4",
+          "pin_name": "GND/SHIELD"
+        },
+        {
+          "component": "J1",
+          "pin": "S1",
+          "pin_name": "GND/SHIELD"
+        },
+        {
+          "component": "J1",
+          "pin": "S2",
+          "pin_name": "GND/SHIELD"
+        },
+        {
+          "component": "J1",
+          "pin": "S3",
+          "pin_name": "GND/SHIELD"
+        },
+        {
+          "component": "J1",
+          "pin": "S4",
+          "pin_name": "GND/SHIELD"
+        },
+        {
+          "component": "U2",
+          "pin": "1",
+          "pin_name": "GND"
+        },
+        {
+          "component": "C14",
+          "pin": "2"
+        },
+        {
+          "component": "C25",
+          "pin": "2"
+        },
+        {
+          "component": "C18",
+          "pin": "2"
+        },
+        {
+          "component": "U5",
+          "pin": "2",
+          "pin_name": "GND"
+        },
+        {
+          "component": "C2",
+          "pin": "2"
+        },
+        {
+          "component": "R1",
+          "pin": "2"
+        },
+        {
+          "component": "U8",
+          "pin": "2",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "9",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "19",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "20",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "21",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "22",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "23",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "24",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "25",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "26",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "27",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "28",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "29",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "30",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "31",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "32",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "33",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "34",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "35",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "36",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "37",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "38",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U3",
+          "pin": "39",
+          "pin_name": "GND"
+        },
+        {
+          "component": "J4",
+          "pin": "4",
+          "pin_name": "4"
+        },
+        {
+          "component": "R29",
+          "pin": "1"
+        },
+        {
+          "component": "C24",
+          "pin": "2"
+        },
+        {
+          "component": "C23",
+          "pin": "2"
+        },
+        {
+          "component": "R13",
+          "pin": "2"
+        },
+        {
+          "component": "J2",
+          "pin": "2",
+          "pin_name": "2"
+        },
+        {
+          "component": "C13",
+          "pin": "1"
+        },
+        {
+          "component": "R6",
+          "pin": "2"
+        },
+        {
+          "component": "U7",
+          "pin": "1",
+          "pin_name": "1"
+        },
+        {
+          "component": "U7",
+          "pin": "5",
+          "pin_name": "5"
+        },
+        {
+          "component": "U7",
+          "pin": "7",
+          "pin_name": "7"
+        },
+        {
+          "component": "SW1",
+          "pin": "1"
+        },
+        {
+          "component": "SW1",
+          "pin": "2"
+        },
+        {
+          "component": "R3",
+          "pin": "2"
+        },
+        {
+          "component": "C6",
+          "pin": "2"
+        },
+        {
+          "component": "MK1",
+          "pin": "GND"
+        },
+        {
+          "component": "C3",
+          "pin": "2",
+          "pin_name": "-"
+        },
+        {
+          "component": "R23",
+          "pin": "2"
+        },
+        {
+          "component": "C19",
+          "pin": "1"
+        },
+        {
+          "component": "U1",
+          "pin": "3",
+          "pin_name": "SEL"
+        },
+        {
+          "component": "U1",
+          "pin": "10",
+          "pin_name": "V_{SS}"
+        },
+        {
+          "component": "U1",
+          "pin": "11",
+          "pin_name": "V_{SS}"
+        },
+        {
+          "component": "U1",
+          "pin": "21",
+          "pin_name": "V_{SS}"
+        },
+        {
+          "component": "U4",
+          "pin": "3",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U4",
+          "pin": "12",
+          "pin_name": "GND"
+        },
+        {
+          "component": "U4",
+          "pin": "21",
+          "pin_name": "GND"
+        },
+        {
+          "component": "C21",
+          "pin": "2"
+        },
+        {
+          "component": "C11",
+          "pin": "2"
+        },
+        {
+          "component": "J6",
+          "pin": "5",
+          "pin_name": "Pin_5"
+        },
+        {
+          "component": "C15",
+          "pin": "1"
+        },
+        {
+          "component": "C22",
+          "pin": "2"
+        },
+        {
+          "component": "C16",
+          "pin": "2"
+        },
+        {
+          "component": "C7",
+          "pin": "2",
+          "pin_name": "-"
+        },
+        {
+          "component": "SW2",
+          "pin": "1"
+        },
+        {
+          "component": "SW2",
+          "pin": "2"
+        },
+        {
+          "component": "U6",
+          "pin": "4",
+          "pin_name": "GND"
+        },
+        {
+          "component": "J3",
+          "pin": "3",
+          "pin_name": "VSS1"
+        },
+        {
+          "component": "J3",
+          "pin": "6",
+          "pin_name": "VSS2"
+        },
+        {
+          "component": "J3",
+          "pin": "8",
+          "pin_name": "DAT1"
+        },
+        {
+          "component": "J3",
+          "pin": "9",
+          "pin_name": "DAT2"
+        },
+        {
+          "component": "J3",
+          "pin": "G1",
+          "pin_name": "SHIELD_GND"
+        },
+        {
+          "component": "J3",
+          "pin": "G2",
+          "pin_name": "SHIELD_GND"
+        },
+        {
+          "component": "J3",
+          "pin": "G3",
+          "pin_name": "SHIELD_GND"
+        },
+        {
+          "component": "J3",
+          "pin": "G4",
+          "pin_name": "SHIELD_GND"
+        },
+        {
+          "component": "C8",
+          "pin": "2"
+        },
+        {
+          "component": "C10",
+          "pin": "2"
+        },
+        {
+          "component": "R2",
+          "pin": "2"
+        },
+        {
+          "component": "R4",
+          "pin": "2"
+        }
+      ]
+    },
+    {
+      "name": "Net-(U1-PROG1)",
+      "connections": [
+        {
+          "component": "R5",
+          "pin": "1"
+        },
+        {
+          "component": "U1",
+          "pin": "13",
+          "pin_name": "PROG1"
+        }
+      ]
+    },
+    {
+      "name": "/ESP32-C3-02/MOSI_DI",
+      "connections": [
+        {
+          "component": "TP1",
+          "pin": "1",
+          "pin_name": "1"
+        },
+        {
+          "component": "U6",
+          "pin": "5",
+          "pin_name": "DI(IO0)"
+        },
+        {
+          "component": "J3",
+          "pin": "2",
+          "pin_name": "CMD"
+        },
+        {
+          "component": "R15",
+          "pin": "1"
+        }
+      ]
+    },
+    {
+      "name": "/PWR_LED",
+      "connections": [
+        {
+          "component": "R10",
+          "pin": "2"
+        },
+        {
+          "component": "D4",
+          "pin": "1",
+          "pin_name": "K"
+        }
+      ]
+    },
+    {
+      "name": "Net-(Q2-B)",
+      "connections": [
+        {
+          "component": "Q2",
+          "pin": "1",
+          "pin_name": "B"
+        },
+        {
+          "component": "R33",
+          "pin": "2"
+        }
+      ]
+    },
+    {
+      "name": "Net-(D3-K)",
+      "connections": [
+        {
+          "component": "D3",
+          "pin": "1",
+          "pin_name": "K"
+        },
+        {
+          "component": "R9",
+          "pin": "2"
+        }
+      ]
+    },
+    {
+      "name": "/+5V_USB",
+      "connections": [
+        {
+          "component": "D3",
+          "pin": "2",
+          "pin_name": "A"
+        },
+        {
+          "component": "F1",
+          "pin": "2",
+          "pin_name": "2"
+        },
+        {
+          "component": "C6",
+          "pin": "1"
+        },
+        {
+          "component": "U1",
+          "pin": "2",
+          "pin_name": "VPCC"
+        },
+        {
+          "component": "U1",
+          "pin": "4",
+          "pin_name": "PROG2"
+        },
+        {
+          "component": "U1",
+          "pin": "17",
+          "pin_name": "CE"
+        },
+        {
+          "component": "U1",
+          "pin": "18",
+          "pin_name": "IN"
+        },
+        {
+          "component": "U1",
+          "pin": "19",
+          "pin_name": "IN"
+        },
+        {
+          "component": "D2",
+          "pin": "2",
+          "pin_name": "A"
+        },
+        {
+          "component": "D1",
+          "pin": "2",
+          "pin_name": "A"
+        }
+      ]
+    },
+    {
+      "name": "Net-(U4-VBUS)",
+      "connections": [
+        {
+          "component": "R12",
+          "pin": "2"
+        },
+        {
+          "component": "R13",
+          "pin": "1"
+        },
+        {
+          "component": "U4",
+          "pin": "8",
+          "pin_name": "VBUS"
+        },
+        {
+          "component": "C11",
+          "pin": "1"
+        }
+      ]
+    },
+    {
+      "name": "Net-(U4-~{RST})",
+      "connections": [
+        {
+          "component": "R11",
+          "pin": "2"
+        },
+        {
+          "component": "U4",
+          "pin": "9",
+          "pin_name": "~{RST}"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(J1-SSTXP1-PadA2)",
+      "connections": [
+        {
+          "component": "J1",
+          "pin": "A2",
+          "pin_name": "SSTXP1"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(J1-SSTXN1-PadA3)",
+      "connections": [
+        {
+          "component": "J1",
+          "pin": "A3",
+          "pin_name": "SSTXN1"
+        }
+      ]
+    },
+    {
+      "name": "Net-(J1-CC1)",
+      "connections": [
+        {
+          "component": "J1",
+          "pin": "A5",
+          "pin_name": "CC1"
+        },
+        {
+          "component": "R4",
+          "pin": "1"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(J1-SBU1-PadA8)",
+      "connections": [
+        {
+          "component": "J1",
+          "pin": "A8",
+          "pin_name": "SBU1"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(J1-SSRXN2-PadA10)",
+      "connections": [
+        {
+          "component": "J1",
+          "pin": "A10",
+          "pin_name": "SSRXN2"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(J1-SSRXP2-PadA11)",
+      "connections": [
+        {
+          "component": "J1",
+          "pin": "A11",
+          "pin_name": "SSRXP2"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(J1-SSTXP2-PadB2)",
+      "connections": [
+        {
+          "component": "J1",
+          "pin": "B2",
+          "pin_name": "SSTXP2"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(J1-SSTXN2-PadB3)",
+      "connections": [
+        {
+          "component": "J1",
+          "pin": "B3",
+          "pin_name": "SSTXN2"
+        }
+      ]
+    },
+    {
+      "name": "Net-(J1-CC2)",
+      "connections": [
+        {
+          "component": "J1",
+          "pin": "B5",
+          "pin_name": "CC2"
+        },
+        {
+          "component": "R3",
+          "pin": "1"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(J1-SBU2-PadB8)",
+      "connections": [
+        {
+          "component": "J1",
+          "pin": "B8",
+          "pin_name": "SBU2"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(J1-SSRXN1-PadB10)",
+      "connections": [
+        {
+          "component": "J1",
+          "pin": "B10",
+          "pin_name": "SSRXN1"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(J1-SSRXP1-PadB11)",
+      "connections": [
+        {
+          "component": "J1",
+          "pin": "B11",
+          "pin_name": "SSRXP1"
+        }
+      ]
+    },
+    {
+      "name": "/ESP32-C3-02/DTS",
+      "connections": [
+        {
+          "component": "R33",
+          "pin": "1"
+        },
+        {
+          "component": "Q3",
+          "pin": "2",
+          "pin_name": "E"
+        },
+        {
+          "component": "U4",
+          "pin": "15",
+          "pin_name": "~{CTS}"
+        }
+      ]
+    },
+    {
+      "name": "Net-(U8-IN-)",
+      "connections": [
+        {
+          "component": "R31",
+          "pin": "1"
+        },
+        {
+          "component": "R30",
+          "pin": "2"
+        },
+        {
+          "component": "C20",
+          "pin": "1"
+        },
+        {
+          "component": "U8",
+          "pin": "3",
+          "pin_name": "IN-"
+        }
+      ]
+    },
+    {
+      "name": "Net-(R17-Pad3)",
+      "connections": [
+        {
+          "component": "R31",
+          "pin": "2"
+        },
+        {
+          "component": "R17",
+          "pin": "3"
+        }
+      ]
+    },
+    {
+      "name": "+5V",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "3",
+          "pin_name": "VIN"
+        },
+        {
+          "component": "C2",
+          "pin": "1"
+        },
+        {
+          "component": "C3",
+          "pin": "1",
+          "pin_name": "+"
+        },
+        {
+          "component": "FB1",
+          "pin": "1"
+        }
+      ]
+    },
+    {
+      "name": "Net-(U4-~{RXT}{slash}GPIO.3)",
+      "connections": [
+        {
+          "component": "R18",
+          "pin": "1"
+        },
+        {
+          "component": "U4",
+          "pin": "19",
+          "pin_name": "~{RXT}/GPIO.3"
+        }
+      ]
+    },
+    {
+      "name": "Net-(D6-K)",
+      "connections": [
+        {
+          "component": "R18",
+          "pin": "2"
+        },
+        {
+          "component": "D6",
+          "pin": "1",
+          "pin_name": "K"
+        }
+      ]
+    },
+    {
+      "name": "Net-(C19-Pad2)",
+      "connections": [
+        {
+          "component": "R30",
+          "pin": "1"
+        },
+        {
+          "component": "C19",
+          "pin": "2"
+        }
+      ]
+    },
+    {
+      "name": "Net-(C17-Pad2)",
+      "connections": [
+        {
+          "component": "R28",
+          "pin": "1"
+        },
+        {
+          "component": "MK1",
+          "pin": "OUT"
+        },
+        {
+          "component": "C17",
+          "pin": "2"
+        }
+      ]
+    },
+    {
+      "name": "Net-(C16-Pad1)",
+      "connections": [
+        {
+          "component": "R28",
+          "pin": "2"
+        },
+        {
+          "component": "C16",
+          "pin": "1"
+        },
+        {
+          "component": "R26",
+          "pin": "1"
+        }
+      ]
+    },
+    {
+      "name": "Net-(Q3-B)",
+      "connections": [
+        {
+          "component": "Q3",
+          "pin": "1",
+          "pin_name": "B"
+        },
+        {
+          "component": "R34",
+          "pin": "2"
+        }
+      ]
+    },
+    {
+      "name": "/ESP32-C3-02/MISO_DO",
+      "connections": [
+        {
+          "component": "R22",
+          "pin": "1"
+        },
+        {
+          "component": "U3",
+          "pin": "16",
+          "pin_name": "IO2"
+        },
+        {
+          "component": "TP2",
+          "pin": "1",
+          "pin_name": "1"
+        },
+        {
+          "component": "R16",
+          "pin": "2"
+        }
+      ]
+    },
+    {
+      "name": "Net-(U6-DO(IO1))",
+      "connections": [
+        {
+          "component": "R22",
+          "pin": "2"
+        },
+        {
+          "component": "U6",
+          "pin": "2",
+          "pin_name": "DO(IO1)"
+        }
+      ]
+    },
+    {
+      "name": "/ESP32-C3-02/USB_D-",
+      "connections": [
+        {
+          "component": "U5",
+          "pin": "1",
+          "pin_name": "I/O1"
+        },
+        {
+          "component": "U4",
+          "pin": "5",
+          "pin_name": "D-"
+        }
+      ]
+    },
+    {
+      "name": "/ESP32-C3-02/USB_D+",
+      "connections": [
+        {
+          "component": "U5",
+          "pin": "3",
+          "pin_name": "I/O2"
+        },
+        {
+          "component": "U4",
+          "pin": "4",
+          "pin_name": "D+"
+        }
+      ]
+    },
+    {
+      "name": "Net-(U1-~{TE})",
+      "connections": [
+        {
+          "component": "R1",
+          "pin": "1"
+        },
+        {
+          "component": "U1",
+          "pin": "9",
+          "pin_name": "~{TE}"
+        }
+      ]
+    },
+    {
+      "name": "Net-(U8-IN+)",
+      "connections": [
+        {
+          "component": "U8",
+          "pin": "1",
+          "pin_name": "IN+"
+        },
+        {
+          "component": "R29",
+          "pin": "2"
+        },
+        {
+          "component": "C17",
+          "pin": "1"
+        },
+        {
+          "component": "R27",
+          "pin": "1"
+        }
+      ]
+    },
+    {
+      "name": "/ESP32-C3-02/CS_SD",
+      "connections": [
+        {
+          "component": "U3",
+          "pin": "4",
+          "pin_name": "IO5"
+        },
+        {
+          "component": "R19",
+          "pin": "1"
+        },
+        {
+          "component": "TP4",
+          "pin": "1",
+          "pin_name": "1"
+        },
+        {
+          "component": "J3",
+          "pin": "1",
+          "pin_name": "CD/DAT3"
+        }
+      ]
+    },
+    {
+      "name": "Net-(U3-IO6)",
+      "connections": [
+        {
+          "component": "U3",
+          "pin": "5",
+          "pin_name": "IO6"
+        },
+        {
+          "component": "R20",
+          "pin": "2"
+        }
+      ]
+    },
+    {
+      "name": "Net-(U3-IO7)",
+      "connections": [
+        {
+          "component": "U3",
+          "pin": "6",
+          "pin_name": "IO7"
+        },
+        {
+          "component": "R15",
+          "pin": "2"
+        }
+      ]
+    },
+    {
+      "name": "/ESP32-C3-02/CS",
+      "connections": [
+        {
+          "component": "U3",
+          "pin": "10",
+          "pin_name": "IO10"
+        },
+        {
+          "component": "TP5",
+          "pin": "1",
+          "pin_name": "1"
+        },
+        {
+          "component": "U6",
+          "pin": "1",
+          "pin_name": "~{CS}"
+        }
+      ]
+    },
+    {
+      "name": "/ESP32-C3-02/TX_RX",
+      "connections": [
+        {
+          "component": "U3",
+          "pin": "11",
+          "pin_name": "RXD"
+        },
+        {
+          "component": "U4",
+          "pin": "18",
+          "pin_name": "TXD"
+        }
+      ]
+    },
+    {
+      "name": "/ESP32-C3-02/RX_TX",
+      "connections": [
+        {
+          "component": "U3",
+          "pin": "12",
+          "pin_name": "TXD"
+        },
+        {
+          "component": "U4",
+          "pin": "17",
+          "pin_name": "RXD"
+        }
+      ]
+    },
+    {
+      "name": "/CHARGED",
+      "connections": [
+        {
+          "component": "R8",
+          "pin": "1"
+        },
+        {
+          "component": "U1",
+          "pin": "8",
+          "pin_name": "STAT1/~{LBO}"
+        }
+      ]
+    },
+    {
+      "name": "Net-(D2-K)",
+      "connections": [
+        {
+          "component": "R8",
+          "pin": "2"
+        },
+        {
+          "component": "D2",
+          "pin": "1",
+          "pin_name": "K"
+        }
+      ]
+    },
+    {
+      "name": "/VBAT",
+      "connections": [
+        {
+          "component": "J2",
+          "pin": "1",
+          "pin_name": "1"
+        },
+        {
+          "component": "U1",
+          "pin": "14",
+          "pin_name": "V_{BAT}"
+        },
+        {
+          "component": "U1",
+          "pin": "15",
+          "pin_name": "V_{BAT}"
+        },
+        {
+          "component": "U1",
+          "pin": "16",
+          "pin_name": "V_{BAT_SENSE}"
+        }
+      ]
+    },
+    {
+      "name": "/ESP32-C3-02/SCLK",
+      "connections": [
+        {
+          "component": "TP3",
+          "pin": "1",
+          "pin_name": "1"
+        },
+        {
+          "component": "R20",
+          "pin": "1"
+        },
+        {
+          "component": "U6",
+          "pin": "6",
+          "pin_name": "CLK"
+        },
+        {
+          "component": "J3",
+          "pin": "5",
+          "pin_name": "CLK"
+        }
+      ]
+    },
+    {
+      "name": "Net-(U1-PROG3)",
+      "connections": [
+        {
+          "component": "R6",
+          "pin": "1"
+        },
+        {
+          "component": "U1",
+          "pin": "12",
+          "pin_name": "PROG3"
+        }
+      ]
+    },
+    {
+      "name": "Net-(FB1-Pad2)",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "1",
+          "pin_name": "OUT"
+        },
+        {
+          "component": "U1",
+          "pin": "20",
+          "pin_name": "OUT"
+        },
+        {
+          "component": "FB1",
+          "pin": "2"
+        }
+      ]
+    },
+    {
+      "name": "Net-(U1-THERM)",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "5",
+          "pin_name": "THERM"
+        },
+        {
+          "component": "R2",
+          "pin": "1"
+        }
+      ]
+    },
+    {
+      "name": "/CHARGING_POWER_GOOD",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "6",
+          "pin_name": "~{PG}"
+        },
+        {
+          "component": "R7",
+          "pin": "1"
+        }
+      ]
+    },
+    {
+      "name": "/CHARGING",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "7",
+          "pin_name": "STAT2"
+        },
+        {
+          "component": "R9",
+          "pin": "1"
+        }
+      ]
+    },
+    {
+      "name": "Net-(D1-K)",
+      "connections": [
+        {
+          "component": "R7",
+          "pin": "2"
+        },
+        {
+          "component": "D1",
+          "pin": "1",
+          "pin_name": "K"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U4-RS485{slash}GPIO.1-Pad1)",
+      "connections": [
+        {
+          "component": "U4",
+          "pin": "1",
+          "pin_name": "RS485/GPIO.1"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U4-CLK{slash}GPIO.0-Pad2)",
+      "connections": [
+        {
+          "component": "U4",
+          "pin": "2",
+          "pin_name": "CLK/GPIO.0"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U4-NC-Pad10)",
+      "connections": [
+        {
+          "component": "U4",
+          "pin": "10",
+          "pin_name": "NC"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U4-~{SUSPEND}-Pad11)",
+      "connections": [
+        {
+          "component": "U4",
+          "pin": "11",
+          "pin_name": "~{SUSPEND}"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U4-~{WAKEUP}-Pad13)",
+      "connections": [
+        {
+          "component": "U4",
+          "pin": "13",
+          "pin_name": "~{WAKEUP}"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(U4-SUSPEND-Pad14)",
+      "connections": [
+        {
+          "component": "U4",
+          "pin": "14",
+          "pin_name": "SUSPEND"
+        }
+      ]
+    },
+    {
+      "name": "Net-(U4-~{TXT}{slash}GPIO.2)",
+      "connections": [
+        {
+          "component": "U4",
+          "pin": "20",
+          "pin_name": "~{TXT}/GPIO.2"
+        },
+        {
+          "component": "R14",
+          "pin": "1"
+        }
+      ]
+    },
+    {
+      "name": "Net-(D5-K)",
+      "connections": [
+        {
+          "component": "D5",
+          "pin": "1",
+          "pin_name": "K"
+        },
+        {
+          "component": "R14",
+          "pin": "2"
+        }
+      ]
+    },
+    {
+      "name": "Net-(J3-DAT0)",
+      "connections": [
+        {
+          "component": "R16",
+          "pin": "1"
+        },
+        {
+          "component": "J3",
+          "pin": "7",
+          "pin_name": "DAT0"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(J3-PadCD_IND)",
+      "connections": [
+        {
+          "component": "J3",
+          "pin": "CD_IND",
+          "pin_name": "CD_IND"
+        }
+      ]
+    },
+    {
+      "name": "unconnected-(J3-PadWP)",
+      "connections": [
+        {
+          "component": "J3",
+          "pin": "WP",
+          "pin_name": "WP"
+        }
+      ]
+    },
+    {
+      "name": "VBUS",
+      "connections": [
+        {
+          "component": "C1",
+          "pin": "1"
+        },
+        {
+          "component": "R12",
+          "pin": "1"
+        },
+        {
+          "component": "J1",
+          "pin": "A4",
+          "pin_name": "VBUSA1"
+        },
+        {
+          "component": "J1",
+          "pin": "A9",
+          "pin_name": "VBUSA2"
+        },
+        {
+          "component": "J1",
+          "pin": "B4",
+          "pin_name": "VBUSB1"
+        },
+        {
+          "component": "J1",
+          "pin": "B9",
+          "pin_name": "VBUSB2"
+        },
+        {
+          "component": "F1",
+          "pin": "1",
+          "pin_name": "1"
+        },
+        {
+          "component": "U5",
+          "pin": "5",
+          "pin_name": "VBUS"
+        }
+      ]
+    },
+    {
+      "name": "VBAT",
+      "connections": []
+    },
+    {
+      "name": "CHARGING_POWER_GOOD",
+      "connections": []
+    },
+    {
+      "name": "+5V_USB",
+      "connections": []
+    },
+    {
+      "name": "USB_DN",
+      "connections": [
+        {
+          "component": "J1",
+          "pin": "A7",
+          "pin_name": "DN1"
+        },
+        {
+          "component": "J1",
+          "pin": "B7",
+          "pin_name": "DN2"
+        },
+        {
+          "component": "U5",
+          "pin": "6",
+          "pin_name": "I/O1"
+        }
+      ]
+    },
+    {
+      "name": "USB_DP",
+      "connections": [
+        {
+          "component": "J1",
+          "pin": "A6",
+          "pin_name": "DP1"
+        },
+        {
+          "component": "J1",
+          "pin": "B6",
+          "pin_name": "DP2"
+        },
+        {
+          "component": "U5",
+          "pin": "4",
+          "pin_name": "I/O2"
+        }
+      ]
+    },
+    {
+      "name": "PWR_LED",
+      "connections": []
+    },
+    {
+      "name": "CHARGING",
+      "connections": []
+    },
+    {
+      "name": "CHARGED",
+      "connections": []
+    },
+    {
+      "name": "DTS",
+      "connections": []
+    },
+    {
+      "name": "MISO_DO",
+      "connections": []
+    },
+    {
+      "name": "PHOTO_C",
+      "connections": [
+        {
+          "component": "C25",
+          "pin": "1"
+        },
+        {
+          "component": "U3",
+          "pin": "17",
+          "pin_name": "IO1"
+        },
+        {
+          "component": "C24",
+          "pin": "1"
+        },
+        {
+          "component": "Q1",
+          "pin": "1"
+        },
+        {
+          "component": "R23",
+          "pin": "1"
+        }
+      ]
+    },
+    {
+      "name": "SDA",
+      "connections": [
+        {
+          "component": "U3",
+          "pin": "3",
+          "pin_name": "IO4"
+        },
+        {
+          "component": "J4",
+          "pin": "2",
+          "pin_name": "2"
+        },
+        {
+          "component": "U7",
+          "pin": "3",
+          "pin_name": "3"
+        },
+        {
+          "component": "R25",
+          "pin": "2"
+        }
+      ]
+    },
+    {
+      "name": "CS",
+      "connections": []
+    },
+    {
+      "name": "GPIO18",
+      "connections": [
+        {
+          "component": "U3",
+          "pin": "13",
+          "pin_name": "IO18"
+        },
+        {
+          "component": "J6",
+          "pin": "3",
+          "pin_name": "Pin_3"
+        }
+      ]
+    },
+    {
+      "name": "BOOT",
+      "connections": [
+        {
+          "component": "Q3",
+          "pin": "3",
+          "pin_name": "C"
+        },
+        {
+          "component": "U3",
+          "pin": "8",
+          "pin_name": "IO9"
+        },
+        {
+          "component": "SW1",
+          "pin": "3"
+        },
+        {
+          "component": "SW1",
+          "pin": "4"
+        },
+        {
+          "component": "C21",
+          "pin": "1"
+        }
+      ]
+    },
+    {
+      "name": "GPIO8",
+      "connections": [
+        {
+          "component": "U3",
+          "pin": "7",
+          "pin_name": "IO8"
+        },
+        {
+          "component": "J6",
+          "pin": "2",
+          "pin_name": "Pin_2"
+        }
+      ]
+    },
+    {
+      "name": "CS_SD",
+      "connections": []
+    },
+    {
+      "name": "SCL",
+      "connections": [
+        {
+          "component": "U3",
+          "pin": "15",
+          "pin_name": "IO3"
+        },
+        {
+          "component": "J4",
+          "pin": "3",
+          "pin_name": "3"
+        },
+        {
+          "component": "U7",
+          "pin": "4",
+          "pin_name": "4"
+        },
+        {
+          "component": "R24",
+          "pin": "2"
+        }
+      ]
+    },
+    {
+      "name": "RX_TX",
+      "connections": []
+    },
+    {
+      "name": "TX_RX",
+      "connections": []
+    },
+    {
+      "name": "SCLK",
+      "connections": []
+    },
+    {
+      "name": "MOSI_DI",
+      "connections": []
+    },
+    {
+      "name": "USB_D+",
+      "connections": []
+    },
+    {
+      "name": "MIC_OUT",
+      "connections": [
+        {
+          "component": "C20",
+          "pin": "2"
+        },
+        {
+          "component": "U8",
+          "pin": "4",
+          "pin_name": "OUT"
+        },
+        {
+          "component": "U3",
+          "pin": "18",
+          "pin_name": "IO0"
+        },
+        {
+          "component": "R17",
+          "pin": "1"
+        },
+        {
+          "component": "R17",
+          "pin": "2"
+        }
+      ]
+    },
+    {
+      "name": "GPIO19",
+      "connections": [
+        {
+          "component": "U3",
+          "pin": "14",
+          "pin_name": "IO19"
+        },
+        {
+          "component": "J6",
+          "pin": "4",
+          "pin_name": "Pin_4"
+        }
+      ]
+    },
+    {
+      "name": "RTS",
+      "connections": [
+        {
+          "component": "Q2",
+          "pin": "2",
+          "pin_name": "E"
+        },
+        {
+          "component": "R34",
+          "pin": "1"
+        },
+        {
+          "component": "U4",
+          "pin": "16",
+          "pin_name": "~{RTS}"
+        }
+      ]
+    },
+    {
+      "name": "USB_D-",
+      "connections": []
+    },
+    {
+      "name": "EN",
+      "connections": [
+        {
+          "component": "Q2",
+          "pin": "3",
+          "pin_name": "C"
+        },
+        {
+          "component": "U3",
+          "pin": "2",
+          "pin_name": "EN"
+        },
+        {
+          "component": "R32",
+          "pin": "1"
+        },
+        {
+          "component": "C22",
+          "pin": "1"
+        },
+        {
+          "component": "SW2",
+          "pin": "3"
+        },
+        {
+          "component": "SW2",
+          "pin": "4"
+        }
+      ]
+    },
+    {
+      "name": "DTR",
+      "connections": []
+    }
+  ],
+  "sheets": [
+    {
+      "name": "ESP32 sensor board",
+      "file": "ESP32 sensor board.kicad_sch"
+    },
+    {
+      "name": "ESP32-C3-02",
+      "file": "ESP32-C3-02.kicad_sch"
+    },
+    {
+      "name": "sensors",
+      "file": "sensors.kicad_sch"
+    },
+    {
+      "name": "user_interface",
+      "file": "user_interface.kicad_sch"
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "sheet": "ESP32 sensor board",
+      "kind": "text",
+      "text": "USB-C connector",
+      "author": "",
+      "position": {
+        "x": 32.51,
+        "y": 36.58
+      },
+      "size": {
+        "width": 0,
+        "height": 0
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "J1",
+        "R4"
+      ]
+    },
+    {
+      "id": "note-2",
+      "sheet": "ESP32 sensor board",
+      "kind": "text",
+      "text": "LiPo battery charger",
+      "author": "",
+      "position": {
+        "x": 269.49,
+        "y": 34.8
+      },
+      "size": {
+        "width": 0,
+        "height": 0
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "U1"
+      ]
+    },
+    {
+      "id": "note-3",
+      "sheet": "ESP32 sensor board",
+      "kind": "text",
+      "text": "Power indicator LED",
+      "author": "",
+      "position": {
+        "x": 113.54,
+        "y": 103.63
+      },
+      "size": {
+        "width": 0,
+        "height": 0
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "D4",
+        "C5",
+        "R10",
+        "C4",
+        "U2",
+        "R3"
+      ]
+    },
+    {
+      "id": "note-4",
+      "sheet": "ESP32 sensor board",
+      "kind": "text",
+      "text": "Low dropout (LDO) voltage regulator",
+      "author": "",
+      "position": {
+        "x": 38.1,
+        "y": 103.38
+      },
+      "size": {
+        "width": 0,
+        "height": 0
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "C3",
+        "U2",
+        "C2",
+        "R4",
+        "J1",
+        "C4"
+      ]
+    },
+    {
+      "id": "note-5",
+      "sheet": "ESP32 sensor board",
+      "kind": "text",
+      "text": "Battery JST connector",
+      "author": "",
+      "position": {
+        "x": 48.77,
+        "y": 160.78
+      },
+      "size": {
+        "width": 0,
+        "height": 0
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "J2",
+        "C3",
+        "C2",
+        "U2"
+      ]
+    },
+    {
+      "id": "note-6",
+      "sheet": "ESP32 sensor board",
+      "kind": "text_box",
+      "text": "The CP2102 module does not require the USB 3.x TX+/TX- and RX+/RX- pins, \nas it only supports USB 2.0 communication via D+ and D-.",
+      "author": "",
+      "position": {
+        "x": 127,
+        "y": 34.29
+      },
+      "size": {
+        "width": 33.66,
+        "height": 12.06
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "F1"
+      ]
+    },
+    {
+      "id": "note-7",
+      "sheet": "ESP32 sensor board",
+      "kind": "text_box",
+      "text": "The SBU1 and SBU2 pins on a USB-C connector are Sideband Use (SBU) pins. They are part of the USB-C standard and serve specialized roles depending on the application, primarily in Alternate Modes and certain USB-C accessories.\n\nFor basic USB 2.0/3.0 operation, the SBU pins are not used and can be left unconnected or handled with optional protective measures.",
+      "author": "",
+      "position": {
+        "x": 107.31,
+        "y": 62.87
+      },
+      "size": {
+        "width": 53.34,
+        "height": 25.4
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "R7",
+        "F1",
+        "C1",
+        "R8",
+        "D1",
+        "R3"
+      ]
+    },
+    {
+      "id": "note-8",
+      "sheet": "ESP32 sensor board",
+      "kind": "text_box",
+      "text": "USB-C allows for reversible cable insertion. Both pairs of data pins (DP1/DN1 and DP2/DN2) are electrically identical but physically flipped depending on the cable orientation.",
+      "author": "",
+      "position": {
+        "x": 128.27,
+        "y": 46.99
+      },
+      "size": {
+        "width": 32.38,
+        "height": 15.24
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "F1",
+        "R7"
+      ]
+    },
+    {
+      "id": "note-9",
+      "sheet": "ESP32-C3-02",
+      "kind": "text",
+      "text": "SD card module",
+      "author": "",
+      "position": {
+        "x": 180.85,
+        "y": 74.68
+      },
+      "size": {
+        "width": 0,
+        "height": 0
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "J3",
+        "U3",
+        "TP5",
+        "R20",
+        "TP4",
+        "TP3"
+      ]
+    },
+    {
+      "id": "note-10",
+      "sheet": "ESP32-C3-02",
+      "kind": "text",
+      "text": "Activity LEDs",
+      "author": "",
+      "position": {
+        "x": 105.92,
+        "y": 115.06
+      },
+      "size": {
+        "width": 0,
+        "height": 0
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "U4",
+        "D6",
+        "R18",
+        "R14",
+        "D5"
+      ]
+    },
+    {
+      "id": "note-11",
+      "sheet": "ESP32-C3-02",
+      "kind": "text",
+      "text": "Flash memory",
+      "author": "",
+      "position": {
+        "x": 36.32,
+        "y": 134.87
+      },
+      "size": {
+        "width": 0,
+        "height": 0
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "U5",
+        "U4",
+        "U6",
+        "R22"
+      ]
+    },
+    {
+      "id": "note-12",
+      "sheet": "ESP32-C3-02",
+      "kind": "text",
+      "text": "USB module",
+      "author": "",
+      "position": {
+        "x": 24.89,
+        "y": 14.22
+      },
+      "size": {
+        "width": 0,
+        "height": 0
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "C9"
+      ]
+    },
+    {
+      "id": "note-13",
+      "sheet": "ESP32-C3-02",
+      "kind": "text",
+      "text": "Test points",
+      "author": "",
+      "position": {
+        "x": 152.15,
+        "y": 23.11
+      },
+      "size": {
+        "width": 0,
+        "height": 0
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "TP1",
+        "TP2",
+        "TP3",
+        "TP4",
+        "R20"
+      ]
+    },
+    {
+      "id": "note-14",
+      "sheet": "ESP32-C3-02",
+      "kind": "text",
+      "text": "ESP32-C3-02",
+      "author": "",
+      "position": {
+        "x": 179.58,
+        "y": 14.48
+      },
+      "size": {
+        "width": 0,
+        "height": 0
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "U3",
+        "TP1",
+        "TP2",
+        "R20",
+        "TP3"
+      ]
+    },
+    {
+      "id": "note-15",
+      "sheet": "ESP32-C3-02",
+      "kind": "text_box",
+      "text": "Disable write protection and the \"hold\" feature by connecting WP and HOLD to 3.3V.",
+      "author": "",
+      "position": {
+        "x": 46.99,
+        "y": 174.62
+      },
+      "size": {
+        "width": 16.51,
+        "height": 10.16
+      },
+      "mentions_components": [],
+      "mentions_nets": [
+        "3.3V"
+      ],
+      "nearby_components": [
+        "U6",
+        "R22"
+      ]
+    },
+    {
+      "id": "note-16",
+      "sheet": "ESP32-C3-02",
+      "kind": "text_box",
+      "text": "The DAT2 pin on a microSD card (Pin 1 on the GSD090012SEU) is \ntypically used in 4-bit SD mode as one of the four data lines (\nDAT0-DAT3). However, in SPI mode (which is commonly used in \nmicrocontroller applications like this ESP32 project), \nthe DAT2 pin is not required and can be left floating or \nconnected to GND. \n\nIn SPI mode, only the following pins are actively used:\n* DAT0: Serves as the MISO (Master In, Slave Out) line.\n* CMD: Serves as the MOSI (Master Out, Slave In) line.\n* CLK: Used for the SPI clock signal.\n* CS: Used for chip select (sometimes DAT3 is repurposed for this).\n* DAT2 and DAT1 are not used in SPI mode.",
+      "author": "",
+      "position": {
+        "x": 212.72,
+        "y": 121.28
+      },
+      "size": {
+        "width": 59.69,
+        "height": 22.86
+      },
+      "mentions_components": [],
+      "mentions_nets": [
+        "GND",
+        "CS"
+      ],
+      "nearby_components": [
+        "J3",
+        "C12",
+        "C13",
+        "R19",
+        "R16"
+      ]
+    },
+    {
+      "id": "note-17",
+      "sheet": "ESP32-C3-02",
+      "kind": "text_box",
+      "text": "These 50 Ohm resistors help to reduce ringing in high SPI frequencies. \nThey are not really necessary in this design, but adding them for completness.",
+      "author": "",
+      "position": {
+        "x": 45.72,
+        "y": 142.88
+      },
+      "size": {
+        "width": 24.77,
+        "height": 10.16
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "U6",
+        "R22",
+        "U4",
+        "U5"
+      ]
+    },
+    {
+      "id": "note-18",
+      "sheet": "sensors",
+      "kind": "text",
+      "text": "PHOTO SENSOR",
+      "author": "",
+      "position": {
+        "x": 191.01,
+        "y": 34.04
+      },
+      "size": {
+        "width": 0,
+        "height": 0
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "C25",
+        "C24",
+        "R23",
+        "Q1"
+      ]
+    },
+    {
+      "id": "note-19",
+      "sheet": "sensors",
+      "kind": "text",
+      "text": "Microphone and amplifier",
+      "author": "",
+      "position": {
+        "x": 57.15,
+        "y": 119.38
+      },
+      "size": {
+        "width": 0,
+        "height": 0
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "R26",
+        "R27",
+        "C16",
+        "R28",
+        "C17",
+        "MK1"
+      ]
+    },
+    {
+      "id": "note-20",
+      "sheet": "sensors",
+      "kind": "text",
+      "text": "BME280",
+      "author": "",
+      "position": {
+        "x": 44.45,
+        "y": 30.48
+      },
+      "size": {
+        "width": 0,
+        "height": 0
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "R24",
+        "R25"
+      ]
+    },
+    {
+      "id": "note-21",
+      "sheet": "sensors",
+      "kind": "text_box",
+      "text": "Connect SDO to GND for address 0x76.\nConnect SDO to VDDIO for address 0x77.",
+      "author": "",
+      "position": {
+        "x": 57.78,
+        "y": 72.39
+      },
+      "size": {
+        "width": 39.37,
+        "height": 5.08
+      },
+      "mentions_components": [],
+      "mentions_nets": [
+        "GND"
+      ],
+      "nearby_components": [
+        "C15",
+        "R25",
+        "R24"
+      ]
+    },
+    {
+      "id": "note-22",
+      "sheet": "user_interface",
+      "kind": "text",
+      "text": "OLED display connector (I2C)",
+      "author": "",
+      "position": {
+        "x": 58.42,
+        "y": 40.64
+      },
+      "size": {
+        "width": 0,
+        "height": 0
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "J4"
+      ]
+    },
+    {
+      "id": "note-23",
+      "sheet": "user_interface",
+      "kind": "text",
+      "text": "RESET and BOOT buttons",
+      "author": "",
+      "position": {
+        "x": 135.89,
+        "y": 40.64
+      },
+      "size": {
+        "width": 0,
+        "height": 0
+      },
+      "mentions_components": [],
+      "mentions_nets": [
+        "BOOT"
+      ],
+      "nearby_components": [
+        "SW1",
+        "C21"
+      ]
+    },
+    {
+      "id": "note-24",
+      "sheet": "user_interface",
+      "kind": "text",
+      "text": "Breakout for remaining pins",
+      "author": "",
+      "position": {
+        "x": 59.69,
+        "y": 99.06
+      },
+      "size": {
+        "width": 0,
+        "height": 0
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "J6",
+        "J4"
+      ]
+    },
+    {
+      "id": "note-25",
+      "sheet": "user_interface",
+      "kind": "text_box",
+      "text": "To learn more about the boot mode selection,\nsee documentation at https://txplo.re/esp32boot",
+      "author": "",
+      "position": {
+        "x": 198.75,
+        "y": 131.44
+      },
+      "size": {
+        "width": 29.84,
+        "height": 11.43
+      },
+      "mentions_components": [],
+      "mentions_nets": [],
+      "nearby_components": [
+        "Q3",
+        "Q2",
+        "R34",
+        "R33"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "image-1",
+      "sheet": "user_interface",
+      "file": "474fb7cd652dca12.png",
+      "source_name": "",
+      "position": {
+        "x": 196.96,
+        "y": 113.12
+      },
+      "size": {
+        "width": 16.29,
+        "height": 11.25
+      },
+      "pixels": {
+        "width": 278,
+        "height": 192
+      }
+    }
+  ],
+  "stats": {
+    "component_count": 90,
+    "net_count": 95,
+    "sheet_count": 4,
+    "note_count": 25,
+    "image_count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "ESP32 sensor board.kicad_pcb": "pcb/ESP32 sensor board.kicad_pcb",
+  "ESP32 sensor board.kicad_pro": "pcb/ESP32 sensor board.kicad_pro",
+  "ESP32 sensor board.kicad_sch": "pcb/ESP32 sensor board.kicad_sch",
+  "ESP32-C3-02.kicad_sch": "pcb/ESP32-C3-02.kicad_sch",
+  "sensors.kicad_sch": "pcb/sensors.kicad_sch",
+  "user_interface.kicad_sch": "pcb/user_interface.kicad_sch"
+}

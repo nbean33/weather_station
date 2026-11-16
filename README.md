@@ -1,3 +1,5 @@
+![Assembled ESP32 sensor board](docs/pcb_image.jpg)
+
  # ESP32 Weather Station
 
 A feature-rich IoT weather station built on the ESP32 microcontroller using ESP-IDF (Espressif IoT Development Framework) and FreeRTOS. This project monitors temperature and humidity via a DHT22 sensor, provides a web interface for configuration and monitoring, and publishes sensor data to AWS IoT Core via MQTT.
